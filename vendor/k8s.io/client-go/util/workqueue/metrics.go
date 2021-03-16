@@ -221,9 +221,7 @@ type queueMetricsFactory struct {
 }
 
 func (f *queueMetricsFactory) setProvider(mp MetricsProvider) {
-	f.onlyOnce.Do(func() {
 		f.metricsProvider = mp
-	})
 }
 
 func (f *queueMetricsFactory) newQueueMetrics(name string, clock clock.Clock) queueMetrics {
