@@ -54,7 +54,7 @@ var _ = Describe("Federate ", func() {
 
 	var kubeConfig *restclient.Config
 	var client genericclient.Client
-
+    
 	BeforeEach(func() {
 		if kubeConfig == nil {
 			var err error
